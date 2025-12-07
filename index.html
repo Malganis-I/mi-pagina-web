@@ -2,30 +2,509 @@
 <html lang="de">
 
     <head>
-    <title> Was Geht Ab Bratan</title>    
+    <title> Meine erste Webseite</title> 
+    
+    <style>
+        p {text-align: center;}
+        h1 {text-align: center;}
+        
+
+        .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%; /* optional */
+        } 
+
+        table,th,td {
+            border:1px solid black;
+            border-collapse: collapse;
+            
+        }
+        th,td{
+            background-color:white;
+        }
+        #calendar th,
+        #calendar td {
+        background-color: transparent; /* allow colgroup colors */ 
+        }
+
+        #probe th,#probe td {
+            padding-bottom : 10px;
+            padding-top : 10px;
+            padding-left : 10px;
+            padding-right : 10px;
+            border-collapse:separate;
+        }
+
+        #menu {
+            list-style-type:none;
+            padding:0px;
+            overflow:hidden;
+            
+        }
+        #menu li {
+            float:left;
+        }
+        #menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            background-color:rgb(105, 71, 253);
+        }
+
+        #menu li a:hover {
+            background-color: #fc4747;
+        }
+
+        a:link{
+            background-color: black;
+            color:white;
+            padding:15px 25px;
+            text-decoration:none;
+            
+        }
+        a:visited {
+            background-color:purple;
+            color:white;
+            padding:15px 25px;
+            text-decoration:none;
+            
+            
+        } 
+        a:hover{
+            background-color:red;
+        }
+    </style>
     </head>
 
-    <body> 
+    <body style = "background-color:darkorange;"> 
         
-        <h1>Meine erste Webseite</h1>   
-        <p>CTRL+u to see source code in html pages</p> 
-        <p>Das ist meine erste Webseite  </p>
-        <h2>Mein zweiter Titel </h2>
-        <p> To display images use: &lt;img&gt; with properties src, alt, height and width </p> <br>
-        &lt;br&gt; is a line brake. It is an empty element. 
-        <h3>Mein dritter Titel: Style Attribute </h3>
-        <p style = "color:red;"> This is a red paragraph</p>
-        <h4>Mein vierter Titel: Title Attribute shown when hovered over</h4>
-        <p title = "I'm a tooltip"> Was geht ab Bratan </p>
-        <h5>Mein fünter Titel </h5>
-        <h6>Mein sechster Titel </h6>
+        <h1 style = "font-size:40px;">Meine erste Webseite</h1> 
+
+        <pre>
+            <h1>Introduction</h1>   
+            <p>Bookmarks</p>
+            <p><a href = "#C1">Click to see <b>links</b> section </a></p>
+            <p><a href = "#C2">Click to see <b>quotation</b> section </a></p>
+            <p><a href = "#C4">Click to see <b>image map</b> section </a></p>
+            <p><a href = "#C5">Click to see <b>table</b> section </a></p>
+            <p><a href = "#C6">Click to see <b>list</b> section </a></p>
+
+
+
+
+        </pre>  
+
+        <ul id="menu">
+                <li ><a href="#C1">Links</a></li>
+                <li ><a href="#C2">Quotation</a></li>
+                <li ><a href="#C4">Image Map</a></li>
+                <li ><a href="#C5">Table</a></li>
+                <li ><a href="#C6">Lists</a></li>
+        </ul>
+        
         <p><a href = "https://www.youtube.com/watch?v=hYAL7TbMuzU&list=RDhYAL7TbMuzU&start_radio=1"> This is a link </a> </p>
        
-        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLg_ZgcnARjTdRLvs3uooiHvcimeaSUsxZUA&s" alt = "Gzuz " height = "500" width = "500">
-    </body> 
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLg_ZgcnARjTdRLvs3uooiHvcimeaSUsxZUA&s" alt = "Gzuz " height = "200" width = "200" class = "center-img">
+        <img src = "images/D.jpg" class = "center-img" alt = "Danna">
+        <hr>
+        <p> Horizontal rules are made with tag : <b>&lt;hr&gt;</b>
+        <h1> Custom Headings </h1>
+        <p> style CSS attribute, <b>"font-size"</b> property  <br>  Example: &lt;p style = "font-size:60px;" &gt;  </p>
+        <h1 style = "font-size:60px;">This is a Custom Title with FONT-SIZE</h1>
 
+        
+        <pre>
+        Using <b>&lt;pre&gt;</b> & <b>&lt;/pre&gt;</b> tag to conserve both spaces and lines.
+
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+        </pre>
+
+    </body> 
+    <pre>
+        <h1 style = "font-size:15px;">Syntax for style property.</h1>
+     &lt;tagname style="property:value;"&gt; &lt;/tagname&gt;
+    <hr>
+        <h1 style = "font-size:20;">Other useful attributes </h1>    
+    <b> * background-color</b>
+    example: 
+    <p style = "background-color:brown;">This is a brown paragraph</p>
+    <b> * color</b>
+    example: 
+    <p style = "color:brown;">This is a browm-text paragraph</p>
+    <b> * font-family</b>
+    example: 
+    <p style = "font-family:'Times New Roman';">This is some text with Times New Roman font-family</p>
+    <b> * font-size</b>
+    example: 
+    <p style = "font-size:30px;">This is some text with 10px font-size</p>
+
+    <b> * text-align : center, left, right</b>
+    example: 
+    <p style = "text-align:center;">This is some centered text</p>
+
+    <b> * border : 10px solid color</b>
+    example: 
+    <p style = "border:5px solid tomato;">This is some encircled text</p>
+
+    <b> * background-image : url('img_girl.jpg')</b>
+    example: 
+    <p style = "background-image:url('images/download.jpg');background-size:cover;background-size:100% 100%;">This is some text with some <br> picture in the background. You should be careful with <br> repeating the same image multiple times, since <br> it won't look very imaginative as a web developer.</p>
+
+    <pre style= "font-family:'Times New Roman'; font-size: 18px; color:rgb(255, 255, 255); text-align:center; background-color:black" >  This is a combined property text </pre>
+
+
+    </pre>
+
+    <hr>
+
+    <h1><mark>Text-formatting</mark></h1>
+
+    <pre style="background-color:azure;">
+        &lt;b&gt; - Bold text
+        &lt;strong&gt; - Important text
+        &lt;i&gt; - Italic text
+        &lt;em&gt; - Emphasized text
+        &lt;mark&gt; - Marked text
+        &lt;small&gt; - Smaller text
+        &lt;del&gt; - Deleted text
+        &lt;ins&gt; - Inserted text
+        &lt;sub&gt; - Subscript text
+        &lt;sup&gt; - Superscript text    
+    </pre>
+
+    <hr>
+    <h1 id = "C2"><mark>Quotation</mark></h1>
+
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+    <pre style="background-color:azure;">
+        &lt;blockquote&gt; - Bold text
+        &lt;q&gt; - Important text
+        &lt;abbr&gt; - Italic text
+        &lt;address&gt; - Emphasized text
+        &lt;cite&gt; - Marked text
+        &lt;bdo&gt; - Smaller text
+    </pre>
+    
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+    <hr>
+    <h1 id = "C1"><mark>Links<mark></h1>
+    <pre>
+        <b>attributes:</b>
+        <b>target</b> : _self , _blank, _parent , _top.
+        button as link:
+
+        <button onclick ="document.location='https://www.youtube.com/watch?v=hYAL7TbMuzU&list=RDhYAL7TbMuzU&start_radio=1'">This is a button link</button>
+        
+        <h2>Bookmarks</h2>
+        First create a bookmark in an h title, with attribute id = "C1". Then use link to jump to that section.
+        &lt;a href = "#C1"&gt; Jump to C1 &lt;/a&gt;
+        <hr>
+        <h1 id = "C4"><mark>Image Maps<mark></h1>
+            <h2>Picture Element</h2>
+        <hr>
+        <h1 id = "C5"><mark>Tables<mark></h1>
+        <h2>Syntax</h2>            
+            <b>
+            &lt;table&gt;
+                 &lt;tr&gt;
+                    th&gt;Person 1&lt; /th &gt;
+                    &lt; th &gt; Person 2 &lt; /th &gt;
+                    &lt; th &gt;Person 3 &lt; /th &gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    ...
+                &lt;td&gt; ----&lt;/td&gt;
+                    ...
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            </b>
+        
+        
+
+        <h2>properties</h2>
+
+        *background-color.
+        *border-collapse.
+        *border-radius.
+        *border-style: dotted,dashed,solid,double,groove,ridge, inset, outset.
+        *border-bottom: 1 px solid black
+
+        *width.
+        *height.
+        *text-align.
+
+        example:
+
+        <table style = "width:50%;">
+            <tr>
+                <th>Border Style Name</th><th>Demonstration</th>
+            </tr>
+            <tr>
+                <td>dotted</td><td><table style="border-collapse: collapse; border-style: dotted; border-width: 2px;"> <tr> <td style="width: 70px; height: 20px;"></td> </tr></table></td>
+            </tr>
+            <tr>
+                <td>dashed</td><td><table style="border-collapse: collapse; border-style: dashed; border-width: 2px;"> <tr> <td style="width: 70px; height: 20px;"></td> </tr></table></td>
+            </tr>
+            <tr>
+                <td>double</td><td><table style="border-collapse: collapse; border-style: double; border-width: 2px;"> <tr> <td style="width: 70px; height: 20px;"></td> </tr></table></td>
+            </tr>
+            <tr>
+                <td>groove</td><td><table style="border-collapse: collapse; border-style: groove; border-width: 2px;"> <tr> <td style="width: 70px; height: 20px;"></td> </tr></table></td>
+            </tr>
+            <tr>
+                <td>ridge</td><td><table style="border-collapse: collapse; border-style: ridge; border-width: 2px;"> <tr> <td style="width: 70px; height: 20px;"></td> </tr></table></td>
+            </tr>
+            <tr>
+                <td>inset</td><td><table style="border-collapse: collapse; border-style: inset; border-width: 2px;"> <tr> <td style="width: 70px; height: 20px;"></td> </tr></table></td>
+            </tr>
+            <tr>
+                <td>outset</td><td><table style="border-collapse: collapse; border-style: outset; border-width: 2px;"> <tr> <td style="width: 70px; height: 20px;"></td> </tr></table></td>
+            </tr>
+        </table>
+
+        
+                    
+            <table>
+            <tr>
+                <th>Person 1</th>
+                <th>Person 2</th>
+                <th>Person 3</th>
+            </tr>
+            <tr>
+                <td>Emil</td>
+                <td>Tobias</td>
+                <td>Linus</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>14</td>
+                <td>10</td>
+            </tr>
+            </table>
+
+        <h2>Colgroup</h2>
+
+        
+        <table id = "calendar" style="width: 50%;">
+        <colgroup>
+        <col span="2" style="background-color:tomato">
+        </colgroup>
+        <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        </tr>
+        <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        </tr>
+        <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        </tr>
+        <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        </tr>
+        </table>
+
+        <h2>th attributes</h2>
+
+        
+        *colspan.
+        *rowspan
+
+        example:
+
+        <table style = "width : 40%;">
+            <caption>Example of text-align property and colspan attribute </caption>
+            <tr>
+                <th colspan = "2"> Name</th> <th>Age</th>
+            </tr>
+            <tr>    
+                <td style = "text-align:center;">Jill </td><td style = "text-align:center;">Smith</td><td style = "text-align:center;">50</td>                
+            </tr>
+            <tr>
+                <td style = "text-align:center;">Eve</td><td style = "text-align:center;">Jackson</td><td style = "text-align:center;">94</td>
+            </tr>
+        </table>
+
+    <h2>Padding and Spacing</h2>
+
+    Cell padding is the space between the cell edges and the cell content. By default the padding is set to 0. To add padding on table cells, use the CSS padding property: padding in <b>th</b> and <b>td</b>.
+        
+    *padding-top:
+    *padding-bottom: 
+    *padding-left: 
+    *padding-right:
+
+    To change the space between table cells, use the CSS <b>border-spacing</b> property on the <b>table</b> element.
+
+    <table style = "border-spacing: 10px;border-collapse:separate">
+        <tr>
+            <th style = "padding-top:10px;padding-bottom:10px;padding-left:10px;padding-right:10px;"> Paddings</th><th>No padding</th>
+        </tr>
+        <tr>
+            <td>90</td><td>40</td>
+        </tr>
+    </table>
+        
+    <h2>Table Tags</h2>
+
+            <table>
+                <tr>
+                    <th>Tag</th><th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td><td>Defines a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td><td>Defines a header cell in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td><td>Defines a row in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td><td>Defines a cell in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td><td>Defines a table caption </td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td><td>Specifies a group of one or more columns in a table for formatting</td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td><td>Specifies column properties for each column within a colgroup</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td><td>Groups the header content in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td><td>Groups the body content in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td><td>Groups the footer content in a table</td>
+                </tr>
+            </table>
+
+    <hr>
+    <h1 id ="C6"><mark>Lists</mark></h1>
+    <h2>Unordered</h2>
+    starts with &lt;<b>ul</b>&gt; and each element is defined by &lt;<b>li</b>&gt;.
+    Example:
+            
+        <ul>   
+            <li>Was geht ab Bratan.</li>
+            <li>This is a second element.</li>
+        </ul>
+    <h3>Properties</h3>
+    <b>list-style-type.</b>
+    <ul>
+        <li>disc</li>
+        <li>circle</li>
+        <li>square</li>
+        <li>none</li>
+    </ul>
+    Example:
+    <ul style="list-style-type:circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <h2>Ordered</h2>
+
+    starts with &lt;<b>ol</b>&gt; and each element is defined by &lt;<b>li</b>&gt;.
+    Example:
+            
+        <ol>   
+            <li>Was geht ab Bratan.</li>
+            <li>This is a second element.</li>
+        </ol>
+
+    
+    <h2>Description Lists</h2>
+    Allows description of elements. <b>&lt;dl&gt; &lt;dt&gt; &lt;dd&gt;</b>
+
+        <dl>
+            <dt> Coffee</dt>
+                <dd>- Drinkable drink.</dd>
+            <dt>Orange Juice</dt>
+                <dd>- Drinkable drink.</dd>
+        </dl>
+
+    <h2>List Tags</h2>
+
+    <table id = "probe" style = "width:60%;border-spacing:5px;">
+        <caption>List tags in HTML</caption>
+        <tr>
+            <th>Tag</th><th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td> <td>Defines an unordered list</td>
+        </tr>
+        <tr>
+            <td>&lt;ol&gt;</td> <td>Defines an ordered list</td>
+        </tr>
+        <tr>
+            <td>&lt;li&gt;</td> <td>Defines a description list</td>
+        </tr>
+        <tr>
+            <td>&lt;dl&gt;</td> <td>Defines a description list</td>
+        </tr>
+        <tr>
+            <td>&lt;dt&gt;</td> <td>Defines a term in a description list</td>
+        </tr>
+        <tr>
+            <td>&lt;dd&gt;</td> <td>Defines the term in a description list</td>
+        </tr>
+    </table>
+
+    </pre>
 
 </html>
-
 
 
